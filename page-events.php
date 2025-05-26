@@ -46,6 +46,11 @@
 </section>
 
 
+<?php get_template_part("template-parts/page-events", "instructions"); ?>
+
+
+
+
 <?php endif; ?>
 
 <?php get_footer(); ?>
