@@ -36,9 +36,15 @@
             <div>
               <!-- Tags -->
               <div class="tags mb-2 flex flex-wrap gap-2 md:gap-4">
-                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagone) ?></span>
-                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagtwo) ?></span> 
-                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagthree) ?></span>   
+                <?php if (!empty($TFtagone)): ?>
+                  <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagone) ?></span>
+                <?php endif; ?>
+                <?php if (!empty($TFtagtwo)): ?>
+                  <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagtwo) ?></span>
+                <?php endif; ?>
+                <?php if (!empty($TFtagthree)): ?>
+                  <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagthree) ?></span>
+                <?php endif; ?>
               </div>
               <!-- Text -->
               <h3 class="mb-2"><?php echo esc_html($TFtitle) ?></h3>
