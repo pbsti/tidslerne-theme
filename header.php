@@ -28,7 +28,7 @@
           <li><a href="<?php echo get_permalink(get_page_by_path("treatments")->ID);?>"><h4>Treatments</h4></a></li>
           <li><a href="events.html"><h4>Events</h4></a></li>
           <li><a href="membership.html"><h4>Membership</h4></a></li>
-          <li><a href="videos.html"><h4>Videos</h4></a></li>
+          <li><a href="<?php echo get_permalink(get_page_by_path("videos")->ID);?>"><h4>Videos</h4></a></li>
           <li><a href="#"><h4>More</h4></a></li>
           <li><a id="frontpage-link" href="<?php echo get_permalink( get_page_by_path( 'frontpage' ) ); ?>"><h4>Frontpage</h4></a></li>
         </ul>
