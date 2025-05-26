@@ -88,7 +88,7 @@
 
 <?php get_template_part("template-parts/page-membership", "offers"); ?>
 
-
+<?php get_template_part("template-parts/page-membership", "testimonials"); ?>
 
 <?php endif; ?>
 
