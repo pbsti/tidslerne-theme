@@ -1,7 +1,7 @@
 <?php 
   $arguments = array(
     'post_type' => 'treatment-frontpage',
-    'posts_per_page' => -1
+    'posts_per_page' => 4
   );
   $loop = new WP_Query($arguments);
 ?> 
