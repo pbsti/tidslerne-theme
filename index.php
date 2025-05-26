@@ -116,8 +116,19 @@
   <div class="flex flex-col items-center justify-center text-center max-w-[600px] px-8 lg:px-20">
     <p><?php echo esc_html($newsletterText); ?></p>
     <div class="flex max-w-md space-x-6 mt-6">
-      <input type="email" placeholder="you@example.com" class="flex-grow h-[45px] px-4 py-2 rounded-md bg-[#2EA836]/20 cursor-pointer"/>
-      <button class="bg-[#2B682C] text-[#ededed] px-4 py-2 rounded-md cursor-pointer">Submit</button>
+      <div class="newsletter">
+        <div class="tnp tnp-subscription ">
+          <form method="post" action="http://exam.paulinastiuj.dk/wp-admin/admin-ajax.php?action=tnp&na=s">
+          <input type="hidden" name="nlang" value="">
+          <div class="tnp-field tnp-field-firstname"><label for="tnp-1">First name</label>
+          <input class="tnp-name" type="text" name="nn" id="tnp-1" value="" placeholder="" required></div>
+          <div class="tnp-field tnp-field-email"><label for="tnp-2">Email</label>
+          <input class="tnp-email" type="email" name="ne" id="tnp-2" value="" placeholder="" required></div>
+          <div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> I accept the privacy policy</label></div><div class="tnp-field tnp-field-button" style="text-align: left"><input class="tnp-submit" type="submit" value="Subscribe" style="">
+          </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>
