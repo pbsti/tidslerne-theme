@@ -85,6 +85,11 @@
 </section>
 
 
+
+<?php get_template_part("template-parts/page-membership", "offers"); ?>
+
+
+
 <?php endif; ?>
 
 <?php get_footer(); ?>
