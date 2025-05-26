@@ -1,6 +1,6 @@
 <?php 
   $arguements = array(
-    'post_type' => 'article-card',
+    'post_type' => 'treatment-frontpage',
     'posts_per_page' => -1
   );
   $loop = new WP_Query($arguements);
@@ -17,40 +17,38 @@
     <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8 sm:px-10">
       <?php while ($loop->have_posts()) : $loop->the_post(); ?>
         <?php
-          $articleImage = get_field("article_image");
-          $tagOne = get_field("tag_1");
-          $tagTwo = get_field("tag_2");
-          $tagThree = get_field("tag_3");
-          $articleAuthor = get_field("article_author");
-          $articleDate = get_field("article_date");
-          $articleTitle = get_field("article_title");
-          $articleInfo = get_field("article_info");
-          $articleButton = get_field("article_button");
+          $TFimage = get_field("tf_image");
+          $TFtagone = get_field("tf_tag_one");
+          $TFtagtwo = get_field("tf_tag_two");
+          $TFtagthree = get_field("tf_tag_three");
+          $TFtitle = get_field("tf_title");
+          $TFdescription = get_field("tf_description");
+          $TFbutton = get_field("tf_button");
         ?>
         <!-- Card -->
         <div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto overflow-hidden rounded-md bg-[#DB85F2]/20 w-full">
           <!-- Image -->
           <div class="flex items-center justify-center w-full h-[220px] sm:h-[230px] md:h-[250px] lg:h-[280px] p-4">
-            <img src="<?php echo esc_url($articleImage["url"]) ?>" alt="fill" class="h-full w-full object-cover" />
+            <img src="<?php echo esc_url($TFimage["url"]) ?>" alt="fill" class="h-full w-full object-cover" />
           </div>
           <!-- Content -->
           <div class="flex flex-col flex-grow items-center w-full p-4 md:p-6">
             <div>
               <!-- Tags -->
               <div class="tags mb-2 flex flex-wrap gap-2 md:gap-4">
-                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($tagOne) ?></span>
-                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($tagTwo) ?></span> 
-                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($tagThree) ?></span>   
+                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagone) ?></span>
+                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagtwo) ?></span> 
+                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagthree) ?></span>   
               </div>
               <!-- Text -->
-              <h3 class="mb-2"><?php echo esc_html($articleTitle) ?></h3>
-              <p class="mb-4 line-clamp-3 sm:line-clamp-4 lg:line-clamp-5"><?php echo esc_html($articleInfo) ?></p>
+              <h3 class="mb-2"><?php echo esc_html($TFtitle) ?></h3>
+              <p class="mb-4 line-clamp-3 sm:line-clamp-4 lg:line-clamp-5"><?php echo esc_html($TFdescription) ?></p>
             </div>
           </div> 
           <!-- Button -->
           <div class="flex flex-col items-center justify-center w-auto p-4">
             <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto px-6 py-3 uppercase text-center text-nowrap">
-              <?php echo esc_html($articleButton) ?>
+              <?php echo esc_html($TFbutton) ?>
             </a>
           </div>
         </div>
