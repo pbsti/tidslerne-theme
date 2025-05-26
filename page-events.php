@@ -48,7 +48,7 @@
 
 <?php get_template_part("template-parts/page-events", "instructions"); ?>
 
-
+<?php get_template_part("template-parts/page-events", "previous"); ?>
 
 
 <?php endif; ?>

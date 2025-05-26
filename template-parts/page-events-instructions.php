@@ -33,7 +33,7 @@ $loop = new WP_Query($args);
         </div>
         <div class="flex justify-center w-full">
           <button class="flex items-center justify-center gap-2 bg-[#2B682C] text-[#ededed] py-3 px-6 rounded-md cursor-pointer">
-            <img src="img/download-icon.png" alt="Download PDF" class="w-5 h-5">
+            <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="Download PDF" class="w-5 h-5">
             <span><?php echo esc_html($ipadPDFDownload) ?></span>
           </button>
         </div>
@@ -47,7 +47,7 @@ $loop = new WP_Query($args);
         </div>
         <div class="flex justify-center w-full">
           <button class="flex items-center justify-center gap-2 bg-[#2B682C] text-[#ededed] py-3 px-6 rounded-md cursor-pointer">
-            <img src="img/download-icon.png" alt="Download PDF" class="w-5 h-5">
+            <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="Download PDF" class="w-5 h-5">
             <span><?php echo esc_html($pcPDFDownload) ?></span>
           </button>
         </div>
