@@ -124,7 +124,8 @@
           <input class="tnp-name" type="text" name="nn" id="tnp-1" value="" placeholder="" required></div>
           <div class="tnp-field tnp-field-email"><label for="tnp-2">Email</label>
           <input class="tnp-email" type="email" name="ne" id="tnp-2" value="" placeholder="" required></div>
-          <div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> I accept the privacy policy</label></div><div class="tnp-field tnp-field-button" style="text-align: left"><input class="tnp-submit" type="submit" value="Subscribe" style="">
+          <div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> I accept the privacy policy</label></div>
+          <div class="tnp-field tnp-field-button bg-[#2B682C] text-[#ededed] px-4 py-2 rounded-md cursor-pointer" style="text-align: left"><input class="tnp-submit" type="submit" value="Subscribe" style="">
           </div>
           </form>
         </div>
