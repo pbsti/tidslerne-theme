@@ -10,7 +10,7 @@ $loop = new WP_Query($args);
 <section class="bg-[#D9D9D9]/40 px-4 md:px-10 py-8 md:py-12">
     <div class="mx-auto max-w-[80vw]">
         <!-- Title OUTSIDE LOOP -->
-        <h2 class="text-center text-2xl md:text-3xl font-medium text-[#121212] mb-8">Gallery</h2>
+        <h2 class="text-center text-3xl md:text-3xl font-medium text-[#121212] mb-8">Gallery</h2>
         
         <!-- Grid container -->
         <div class="grid gap-6 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
