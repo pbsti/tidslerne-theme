@@ -50,6 +50,7 @@
 
 <?php get_template_part("template-parts/page-events", "previous"); ?>
 
+<?php get_template_part("template-parts/page-events", "gallery"); ?>
 
 <?php endif; ?>
 
