@@ -30,6 +30,21 @@
 
 <?php get_template_part("template-parts/page-events", "upcoming"); ?>
 
+<!--Info section -->
+
+<section class="min-h-[230px] flex flex-col justify-center items-center p-6 md:p-10 lg:p-15">
+
+  <div class="w-full text-center mt-2 md:mt-4">
+    <h2>Who can join the events and courses?</h2>
+  </div>
+  <div class="flex items-center justify-center my-8 md:my-15 max-w-[75vw]">
+    <p>
+      <?php echo esc_html($registerDescription); ?>    
+    </p>
+  </div>
+  
+</section>
+
 
 <?php endif; ?>
 
