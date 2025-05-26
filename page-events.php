@@ -28,6 +28,7 @@
   </div>
 </section>
 
+<?php get_template_part("template-parts/page-events", "upcoming"); ?>
 
 
 <?php endif; ?>

@@ -26,7 +26,7 @@
         <ul class="desktop-menu hidden lg:flex items-center gap-10 p-2 uppercase">
           <li><a href="<?php echo get_permalink(get_page_by_path("stories")->ID);?>"><h4>Stories and Guides</h4></a></li>        
           <li><a href="<?php echo get_permalink(get_page_by_path("treatments")->ID);?>"><h4>Treatments</h4></a></li>
-          <li><a href="events.html"><h4>Events</h4></a></li>
+          <li><a href="<?php echo get_permalink(get_page_by_path("events")->ID);?>"><h4>Events</h4></a></li>
           <li><a href="<?php echo get_permalink(get_page_by_path("membership")->ID);?>"><h4>Membership</h4></a></li>
           <li><a href="<?php echo get_permalink(get_page_by_path("videos")->ID);?>"><h4>Videos</h4></a></li>
           <li><a href="#"><h4>More</h4></a></li>
