@@ -13,7 +13,7 @@
     $heroDescription = get_field("hero_description", $page_id);
     $heroImage = get_field("hero_image", $page_id);
     $videoLink = get_field("video_link", $page_id);
-    $thistleTextLeft = get_field("thistle_text_left", $page_id);
+    $thistleTextLeft = get_field("thistle_text_left");
     $thistleTextRight = get_field("thistle_text_right", $page_id);
     $communityText = get_field("community_text", $page_id);
     $newsletterText = get_field("newsletter_text", $page_id);
