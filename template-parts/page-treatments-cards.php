@@ -1,27 +1,25 @@
 <?php 
- $tabs = get_posts(array(
+// Get all treatment tabs
+$tabs = get_posts(array(
     'post_type' => 'treatment-selector',
     'posts_per_page' => -1,
     'orderby' => 'menu_order',
     'order' => 'ASC'
 ));
-
 ?> 
 
 <section class="content-section">
-  <!-- Content panels for each category -->
   <div class="bg-[#D9D9D9]/40 w-full">
     <div class="panels container mx-auto">
       <?php 
       $panel_counter = 1;
       foreach($tabs as $tab): 
-        $tab_slug = sanitize_title($tab->post_title);
         $args = array(
-          'post_type' => 'treatment-frontpage',
-          'posts_per_page' => 4,
+          'post_type' => 'treatment-cards', // Changed to new post type
+          'posts_per_page' => -1, // Show all cards per tab
           'meta_query' => array(
             array(
-              'key' => 'treatment_category', // ACF relationship field
+              'key' => 'treatment_category',
               'value' => $tab->ID,
               'compare' => '='
             )
@@ -30,62 +28,68 @@
         $loop = new WP_Query($args);
       ?>
       
-      <!-- COMPLEMENTARY -->
-      <div class="panel <?php echo $panel_counter === 1 ? '' : 'hidden'; ?>" key="<?php echo $panel_counter; ?>"> 
+      <div class="panel <?php echo $panel_counter === 1 ? '' : 'hidden'; ?>" key="<?php echo $panel_counter; ?>">
         <div class="flex flex-col items-center lg:min-h-[600px] sm:min-h-[400px] min-h-[300px] mx-auto px-4 py-6 md:py-8">
-          <!-- Cards grid -->
           <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 mb-8 sm:px-10">
             <?php if ($loop->have_posts()): while ($loop->have_posts()) : $loop->the_post(); ?>
               <?php
-                $TFimage = get_field("tf_image");
-                $TFtagone = get_field("tf_tag_one");
-                $TFtagtwo = get_field("tf_tag_two");
-                $TFtagthree = get_field("tf_tag_three");
-                $TFtitle = get_field("tf_title");
-                $TFdate = get_field("tf_date");
-                $TFauthor = get_field("tf_author");
-                $TFdescription = get_field("tf_description");
-                $TFbutton = get_field("tf_button");
+                $TCimage = get_field("tc_image");
+                $TCtagone = get_field("tc_tag_one");
+                $TCtagtwo = get_field("tc_tag_two");
+                $TCtagthree = get_field("tc_tag_three");
+                $TCtitle = get_field("tc_title");
+                $TCdate = get_field("tc_date");
+                $TCauthor = get_field("tc_author");
+                $TCdescription = get_field("tc_description");
+                $TCbutton = get_field("tc_button");
               ?>
-              <!-- Card -->
+              
               <div class="flex flex-col md:flex-col md:flex-wrap lg:flex-row lg:flex-nowrap justify-center h-auto overflow-hidden rounded-md bg-[#DB85F2]/20 w-full">
                 <!-- Image -->
                 <div class="flex items-center justify-center w-full h-[220px] sm:h-[230px] md:h-[250px] lg:h-[280px] lg:h-full p-4">
-                  <?php if (!empty($TFimage["url"])): ?>
-                    <img src="<?php echo esc_url($TFimage["url"]) ?>" alt="fill" class="h-full w-full object-cover" />
+                  <?php if (!empty($TCimage["url"])): ?>
+                    <img src="<?php echo esc_url($TCimage["url"]) ?>" alt="fill" class="h-full w-full object-cover" />
                   <?php endif; ?>
                 </div>
+                
                 <!-- Content -->
                 <div class="flex flex-col flex-grow items-center justify-center w-full p-4 md:p-6">
                   <div>
                     <!-- Tags -->
                     <div class="tags mb-2 flex flex-wrap gap-2 md:gap-4">
-                      <?php if (!empty($TFtagone)): ?>
-                        <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagone) ?></span>
+                      <?php if (!empty($TCtagone)): ?>
+                        <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TCtagone) ?></span>
                       <?php endif; ?>
-                      <?php if (!empty($TFtagtwo)): ?>
-                        <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagtwo) ?></span>  
+                      <?php if (!empty($TCtagtwo)): ?>
+                        <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TCtagtwo) ?></span>  
                       <?php endif; ?>
-                      <?php if (!empty($TFtagthree)): ?>
-                        <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TFtagthree) ?></span>
+                      <?php if (!empty($TCtagthree)): ?>
+                        <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($TCtagthree) ?></span>
                       <?php endif; ?>
                     </div>
                     <!-- Text -->
-                    <p class="author mb-2"><?php echo esc_html($TFauthor) ?></p>
-                    <p class="mb-2"><?php echo esc_html($TFdate) ?></p>
-                    <h3 class="mb-2"><?php echo esc_html($TFtitle) ?></h3>
-                    <p class="mb-4 line-clamp-3 sm:line-clamp-4 lg:line-clamp-5"><?php echo esc_html($TFdescription) ?></p>
+                    <p class="author mb-2"><?php echo esc_html($TCauthor) ?></p>
+                    <p class="mb-2"><?php echo esc_html($TCdate) ?></p>
+                    <h3 class="mb-2"><?php echo esc_html($TCtitle) ?></h3>
+                    <p class="mb-4 line-clamp-3 sm:line-clamp-4 lg:line-clamp-5"><?php echo esc_html($TCdescription) ?></p>
                   </div>
                 </div> 
+                
                 <!-- Button -->
                 <div class="flex flex-col items-center justify-center w-auto p-4">
                   <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto px-6 py-3 uppercase text-center text-nowrap">
-                    <?php echo esc_html($TFbutton) ?>
+                    <?php echo esc_html($TCbutton) ?>
                   </a>
                 </div>
               </div>
-            <?php endwhile;endif; ?>
+              
+            <?php endwhile; else: ?>
+              <div class="col-span-full text-center py-8">
+                <p>No treatment cards found for this category.</p>
+              </div>
+            <?php endif; ?>
           </div>
+          
           <!-- CTA Button -->
           <div class="flex justify-center w-full md:mt-10 mb-12">
             <a href="#"
