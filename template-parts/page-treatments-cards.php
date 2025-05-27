@@ -7,17 +7,6 @@ $tabs = get_posts(array(
     'order' => 'ASC'
 ));
 
-$args_diet = array(
-    'post_type' => 'diet-card',
-    'meta_query' => array(
-        array(
-            'key' => 'treatment_tab_link',
-            'value' => serialize(strval($tab->ID)),
-            'compare' => 'LIKE'
-        )
-    )
-);
-$all_cards = array_merge($loop_treatment->posts, $diet_cards->posts);
 ?> 
 
 <section class="content-section">
