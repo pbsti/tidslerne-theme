@@ -84,7 +84,7 @@ $tabs = get_posts(array(
            <!-- CTA Button -->
           <div class="flex justify-center w-full md:mt-10 mb-12">
             <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
-              ALL <?php echo strtoupper($tab->post_title); ?> TIPS 
+              ALL <?php echo strtoupper($tab->post_title); ?> ARTICLES 
             </a>
           </div>
           
