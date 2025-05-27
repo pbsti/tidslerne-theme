@@ -15,8 +15,8 @@ $tabs = get_posts(array(
       $panel_counter = 1;
       foreach($tabs as $tab): 
         $args = array(
-          'post_type' => 'treatment-card', // Changed to new post type
-          'posts_per_page' => -1, // Show all cards per tab
+          'post_type' => 'treatment-card', 
+          'posts_per_page' => -1,
           'meta_query' => array(
             array(
               'key' => 'treatment_category',
@@ -33,7 +33,6 @@ $tabs = get_posts(array(
           <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 mb-8 sm:px-10">
             <?php if ($loop->have_posts()): while ($loop->have_posts()) : $loop->the_post(); ?>
               <?php
-                // Changed all field prefixes from TF to TC
                 $TCimage = get_field("tc_image");
                 $TCtagone = get_field("tc_tag_one");
                 $TCtagtwo = get_field("tc_tag_two");
@@ -84,11 +83,7 @@ $tabs = get_posts(array(
                 </div>
               </div>
               
-            <?php endwhile; else: ?>
-              <div class="col-span-full text-center py-8">
-                <p>No treatment cards found for this category.</p>
-              </div>
-            <?php endif; ?>
+            <?php endwhile; endif; ?>
           </div>
           
           <!-- CTA Button -->
