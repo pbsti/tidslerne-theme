@@ -1,7 +1,9 @@
 <?php
 $args = array(
     "post_type" => "treatment-selector",
-    "posts_per_page" => -1
+    "posts_per_page" => -1,
+    "orderby" => "menu_order", 
+    "order" => "ASC"
 );
 $loop = new WP_Query($args);
 ?>
@@ -13,11 +15,14 @@ $loop = new WP_Query($args);
     </div>
     <h3 class="text-center text-[#2B682C] mb-6 md:mb-8 lg:mb-10">Choose a category</h3>
     <div class="tab-container flex flex-wrap justify-center gap-4 w-full">
+      <?php $counter = 1; ?>
       <?php while($loop->have_posts()): $loop->the_post(); ?>
         <?php $treatmentTab = get_field("treatment_tab"); ?>
-        <button class="bg-[#580259] text-[#ededed] rounded-xl px-6 py-3 uppercase text-center cursor-pointer">
+        <button class="<?php echo $counter === 1 ? 'bg-[#580259]' : 'bg-[#2B682C]'; ?> text-[#ededed] rounded-xl px-6 py-3 uppercase text-center cursor-pointer" 
+                key="<?php echo $counter; ?>">
           <?php echo esc_html($treatmentTab) ?>
         </button>
+        <?php $counter++; ?>
       <?php endwhile; ?>
     </div>
   </div>

@@ -17,35 +17,36 @@
 
 
 
+
 // Tabs
 
 
 
-    const tabs = document.querySelectorAll(".tab-container button");
-    const panels = document.getElementsByClassName("panel");
+const tabs = document.querySelectorAll(".tab-container button");
+const panels = document.getElementsByClassName("panel");
 
-    tabs.forEach((tab) => tab.addEventListener("click", handleTabClick));
+tabs.forEach((tab) => tab.addEventListener("click", handleTabClick));
 
-    function handleTabClick(e) {
-      const targetKey = e.target.getAttribute("key");
-      
-      tabs.forEach((tab) => {
-        tab.classList.remove("bg-[#580259]");
-        tab.classList.add("bg-[#2B682C]");
-      });
-      
-      document.querySelectorAll(`.tab-container button[key="${targetKey}"]`).forEach(tab => {
-        tab.classList.remove("bg-[#2B682C]");
-        tab.classList.add("bg-[#580259]");
-      });
-      
-      for (const panel of panels) {
-        const key = panel.getAttribute("key");
-        if (key === targetKey) {
-          panel.classList.remove("hidden");
-        } else {
-          panel.classList.add("hidden");
-        }
-      }
+function handleTabClick(e) {
+  const targetKey = e.target.getAttribute("key");
+  
+  tabs.forEach((tab) => {
+    tab.classList.remove("bg-[#580259]");
+    tab.classList.add("bg-[#2B682C]");
+  });
+  
+  document.querySelectorAll(`.tab-container button[key="${targetKey}"]`).forEach(tab => {
+    tab.classList.remove("bg-[#2B682C]");
+    tab.classList.add("bg-[#580259]");
+  });
+  
+  for (const panel of panels) {
+    const key = panel.getAttribute("key");
+    if (key === targetKey) {
+      panel.classList.remove("hidden");
+    } else {
+      panel.classList.add("hidden");
     }
+  }
+}
 
