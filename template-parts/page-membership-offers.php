@@ -19,7 +19,7 @@ $loop = new WP_Query($args);
       ?>
       <div class="bg-[#2EA836]/20 w-full md:w-1/3 max-w-sm p-4 mb-4 md:mb-0 flex flex-col items-center cursor-pointer">
         <?php if (!empty($offerImage["url"])): ?>
-          <img src="<?php echo esc_url($offerImage["url"]); ?>" alt="Offer Picture" class="mb-4 h-full w-full object-cover" />
+          <img src="<?php echo esc_url($offerImage["url"]); ?>" alt="<?php echo esc_attr($offerImage["alt"]) ?>" class="mb-4 h-full w-full object-cover" />
         <?php endif; ?>
         <h3 class="text-center text-[#2B682C] p-8"><?php echo esc_html($offerTitle); ?></h3>
       </div>

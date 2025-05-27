@@ -27,7 +27,7 @@
       <p class="text-left mb-6"><?php echo esc_html($membershipHeroText); ?></p>
     </div>
     <div class="w-full md:w-1/2 aspect-[4/3] md:aspect-auto">
-      <img src="<?php echo esc_url($membershipHeroImage["url"]) ?>" alt="fill" class="h-full w-full mb-4 md:mb-0 object-cover">
+      <img src="<?php echo esc_url($membershipHeroImage["url"]) ?>" alt="<?php echo esc_attr($membershipHeroImage["alt"]) ?>" class="h-full w-full mb-4 md:mb-0 object-cover">
     </div>
   </div>
 </section>
@@ -72,7 +72,7 @@
 
   <div class="flex flex-col items-center justify-center md:w-1/3 w-full p-2 md:p-10">
     <div class="mb-6 md:mb-10 h-15 w-20 sm:h-20 sm:w-25 md:w-[200px] md:h-[120px] flex justify-center items-center">
-      <img src="<?php echo esc_url($chargeIcon["url"]) ?>" alt="Payment Card" class="max-h-full max-w-full object-contain">
+      <img src="<?php echo esc_url($chargeIcon["url"]) ?>" alt="<?php echo esc_attr($chargeIcon["alt"]) ?>" class="max-h-full max-w-full object-contain">
     </div>
     <div class="flex justify-center w-full">
       <a href="#"

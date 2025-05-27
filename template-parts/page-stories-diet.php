@@ -32,7 +32,7 @@ $loop = new WP_Query($args);
                 <div class="flex flex-col md:flex-col md:flex-wrap lg:flex-row lg:flex-nowrap justify-center h-auto overflow-hidden rounded-md bg-[#DB85F2]/20 w-full">
                   <!-- Image -->
                   <div class="flex items-center justify-center w-full h-[220px] sm:h-[230px] md:h-[250px] lg:h-[280px] lg:h-full p-4">
-                    <img src="<?php echo esc_url($dietImage["url"]) ?>" alt="fill" class="h-full w-full object-cover" />
+                    <img src="<?php echo esc_url($dietImage["url"]) ?>" alt="<?php echo esc_attr($dietImage["alt"]) ?>" class="h-full w-full object-cover" />
                   </div>
 
                   <!-- Content -->

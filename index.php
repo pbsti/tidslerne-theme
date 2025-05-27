@@ -29,7 +29,7 @@
     <!-- Left content -->
     <div class="w-full md:w-1/2 flex flex-col items-center justify-between gap-2 lg:gap-4 p-2 md:p-6">
       <?php if ($logo): ?>
-        <img src="<?php echo esc_url($logo["url"]); ?>" alt="Tidslerne text logo" class="max-w-xs md:max-w-2xs lg:max-w-sm w-full h-auto mx-auto md:mx-0 p-4">
+        <img src="<?php echo esc_url($logo["url"]); ?>" alt="<?php echo esc_attr($logo["alt"]) ?>" class="max-w-xs md:max-w-2xs lg:max-w-sm w-full h-auto mx-auto md:mx-0 p-4">
       <?php endif; ?>
       <h1 class="md:mb-12 text-center p-4"><?php echo esc_html($heroDescription); ?></h1>
       <div class="relative w-full max-w-sm mb-4">
@@ -46,7 +46,7 @@
     <!-- Right image -->
     <div class="w-full md:w-1/2 flex justify-center items-center p-2 md:p-6 rounded-md">
       <?php if ($heroImage): ?>
-        <img src="<?php echo esc_url($heroImage["url"]); ?>" alt="Members Community Group Photo" class="w-full h-auto rounded-md">
+        <img src="<?php echo esc_url($heroImage["url"]); ?>" alt="<?php echo esc_attr($heroImage["alt"]) ?>" class="w-full h-auto rounded-md">
       <?php endif; ?>
     </div>
   </div>
@@ -110,7 +110,7 @@
       <h2>Updates, Insights & Inspiration from Tidslerne</h2>
     </div>
     <?php if ($newsletterIcon): ?>
-      <img src="<?php echo esc_url($newsletterIcon["url"]); ?>" alt="Newsletter icon" class="max-h-full w-auto p-2">
+      <img src="<?php echo esc_url($newsletterIcon["url"]); ?>" alt="<?php echo esc_attr($newsletterIcon["alt"]) ?>" class="max-h-full w-auto p-2">
     <?php endif; ?>
   </div>
   <div class="flex flex-col items-center justify-center text-center max-w-[600px] px-8 lg:px-20">
@@ -136,7 +136,7 @@
   <div class="flex flex-col-reverse md:flex-row w-full">
     <div class="md:w-1/2 w-full aspect-[4/3] md:aspect-auto">
       <?php if ($storiesImage): ?>
-        <img src="<?php echo esc_url($storiesImage["url"]); ?>" alt="Woman Smiling" class="w-full h-full object-cover"/>
+        <img src="<?php echo esc_url($storiesImage["url"]); ?>" alt="<?php echo esc_attr($storiesImage["alt"]) ?>" class="w-full h-full object-cover"/>
       <?php endif; ?>
     </div>
     <div class="md:w-1/2 w-full flex flex-col justify-center items-center p-6 md:p-10">

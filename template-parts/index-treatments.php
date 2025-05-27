@@ -29,7 +29,7 @@
         <div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto overflow-hidden rounded-md bg-[#DB85F2]/20 w-full">
           <!-- Image -->
           <div class="flex items-center justify-center w-full h-[220px] sm:h-[230px] md:h-[250px] lg:h-[280px] p-4">
-            <img src="<?php echo esc_url($TFimage["url"]) ?>" alt="fill" class="h-full w-full object-cover" />
+            <img src="<?php echo esc_url($TFimage["url"]) ?>" alt="<?php echo esc_attr($TFimage["alt"]) ?>" class="h-full w-full object-cover" />
           </div>
           <!-- Content -->
           <div class="flex flex-col flex-grow items-center w-full p-4 md:p-6">

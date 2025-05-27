@@ -29,11 +29,11 @@ $loop = new WP_Query($args);
       <div class="flex flex-col items-center w-full gap-4 max-w-sm mb-8 sm:mb-10 md:mb-0">
         <h3 class="text-[#356902] text-center"><?php echo esc_html($ipadHeader) ?></h3>
         <div class="mb-2 md:mb-8 h-15 w-20 sm:h-20 sm:w-25 md:w-[200px] md:h-[120px] flex justify-center items-center">
-          <img src="<?php echo esc_url($ipadIcon["url"]) ?>" alt="Tablet Icon" class="max-h-full max-w-full object-contain">
+          <img src="<?php echo esc_url($ipadIcon["url"]) ?>" alt="<?php echo esc_attr($ipadIcon["alt"]) ?>" class="max-h-full max-w-full object-contain">
         </div>
         <div class="flex justify-center w-full">
           <button class="flex items-center justify-center gap-2 bg-[#2B682C] text-[#ededed] py-3 px-6 rounded-md cursor-pointer">
-            <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="Download PDF" class="w-5 h-5">
+            <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="<?php echo esc_attr($ipadPDFDownload["alt"]) ?>" class="w-5 h-5">
             <span><?php echo esc_html($ipadPDFDownload) ?></span>
           </button>
         </div>
@@ -47,7 +47,7 @@ $loop = new WP_Query($args);
         </div>
         <div class="flex justify-center w-full">
           <button class="flex items-center justify-center gap-2 bg-[#2B682C] text-[#ededed] py-3 px-6 rounded-md cursor-pointer">
-            <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="Download PDF" class="w-5 h-5">
+            <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="<?php echo esc_attr($pcPDFDownload["alt"]) ?>" class="w-5 h-5">
             <span><?php echo esc_html($pcPDFDownload) ?></span>
           </button>
         </div>

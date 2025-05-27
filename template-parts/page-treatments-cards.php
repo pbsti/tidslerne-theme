@@ -33,6 +33,7 @@ $tabs = get_posts(array(
           <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 mb-8 sm:px-10">
             <?php if ($loop->have_posts()): while ($loop->have_posts()) : $loop->the_post(); ?>
               <?php
+                // Changed all field prefixes from TF to TC
                 $TCimage = get_field("tc_image");
                 $TCtagone = get_field("tc_tag_one");
                 $TCtagtwo = get_field("tc_tag_two");
@@ -48,7 +49,7 @@ $tabs = get_posts(array(
                 <!-- Image -->
                 <div class="flex items-center justify-center w-full h-[220px] sm:h-[230px] md:h-[250px] lg:h-[280px] lg:h-full p-4">
                   <?php if (!empty($TCimage["url"])): ?>
-                    <img src="<?php echo esc_url($TCimage["url"]) ?>" alt="fill" class="h-full w-full object-cover" />
+                    <img src="<?php echo esc_url($TCimage["url"]) ?>" alt="<?php echo esc_attr($TCimage["alt"]) ?>" class="h-full w-full object-cover" />
                   <?php endif; ?>
                 </div>
                 

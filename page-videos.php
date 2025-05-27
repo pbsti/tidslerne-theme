@@ -23,7 +23,7 @@
       <p class="text-left mb-6"><?php echo esc_html($videosHeroText) ?></p>
     </div>
     <div class="w-full md:w-1/2 aspect-[4/3] md:aspect-auto">
-      <img src="<?php echo esc_url($videosHeroImage["url"]) ?>" alt="Woman Smiling" class="h-full w-full mb-4 md:mb-0 object-cover">
+      <img src="<?php echo esc_url($videosHeroImage["url"]) ?>" alt="<?php echo esc_attr($videosHeroImage["alt"]) ?>" class="h-full w-full mb-4 md:mb-0 object-cover">
     </div>
   </div>
 </section>

@@ -22,7 +22,7 @@
             <?php echo esc_html($bannerText) ?>         
           </p>
           <div class="flex justify-center items-end h-20 md:h-30 mb-2">
-            <img src="<?php echo esc_url($bannerIcon["url"]) ?>" alt="Vision Icon" class="max-h-full w-auto p-2"/>
+            <img src="<?php echo esc_url($bannerIcon["url"]) ?>" alt="<?php echo esc_attr($bannerIcon["alt"]) ?>" class="max-h-full w-auto p-2"/>
           </div>
           <h3 class="uppercase text-center p-2 text-[#2EA836]"><?php echo esc_html($bannerTitle) ?></h3>
         </div>

@@ -21,7 +21,7 @@
       <p class="text-left mb-6"><?php echo esc_html($treatmentsHeroText) ?></p>
     </div>
     <div class="w-full md:w-1/2 aspect-[4/3] md:aspect-auto">
-      <img src="<?php echo esc_url($treatmentsHeroImage["url"]) ?>" alt="fill" class="h-full w-full mb-4 md:mb-0 object-cover">
+      <img src="<?php echo esc_url($treatmentsHeroImage["url"]) ?>" alt="<?php echo esc_attr($treatmentsHeroImage["alt"]) ?>" class="h-full w-full mb-4 md:mb-0 object-cover">
     </div>
   </div>
 </section>

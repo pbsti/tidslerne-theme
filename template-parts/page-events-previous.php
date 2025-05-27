@@ -28,7 +28,7 @@ $loop = new WP_Query($args);
         <!-- Image -->
         <div class="flex items-center justify-center w-full h-[220px] sm:h-[230px] md:h-[250px] lg:h-[280px] lg:h-full p-4">
           <?php if (!empty($pastEventImage["url"])): ?>
-            <img src="<?php echo esc_url($pastEventImage["url"]) ?>" alt="fill" class="h-full w-full object-cover" />
+            <img src="<?php echo esc_url($pastEventImage["url"]) ?>" alt="<?php echo esc_attr($pastEventImage["alt"]) ?>"class="h-full w-full object-cover" />
           <?php endif; ?>
         </div>
         <!-- Content -->

@@ -25,7 +25,7 @@ $loop = new WP_Query($args);
         <div class="bg-[#2EA836]/20 relative flex flex-col items-center pt-16 px-4 pb-8 rounded-lg h-full min-h-[260px]">
           <div class="absolute -top-12">
             <?php if (!empty($profilePicture["url"])): ?>
-              <img src="<?php echo esc_url($profilePicture["url"]); ?>" alt="Testimonial Photo" class="w-24 h-24 rounded-full object-cover">
+              <img src="<?php echo esc_url($profilePicture["url"]); ?>" alt="<?php echo esc_attr($profilePicture["alt"]) ?>" class="w-24 h-24 rounded-full object-cover">
             <?php endif; ?>
           </div>
           <p class="text-center mt-5"><?php echo esc_html($testimonialText) ?></p>

@@ -26,7 +26,7 @@
       </p>
     </div>
     <div class="w-full md:w-1/2 aspect-[4/3] md:aspect-auto">
-        <img src="<?php echo esc_url($storiesHeroImage["url"]); ?>" alt="Woman Smiling" class="h-full w-full mb-4 md:mb-0 object-cover">
+        <img src="<?php echo esc_url($storiesHeroImage["url"]); ?>" alt="<?php echo esc_attr($storiesHeroImage["alt"]) ?>" class="h-full w-full mb-4 md:mb-0 object-cover">
     </div>
   </div>
 </section>

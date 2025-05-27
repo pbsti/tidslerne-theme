@@ -29,11 +29,11 @@ $loop = new WP_Query($args);
     <div class="flex flex-col items-center w-full max-w-sm mb-20 md:mb-0">
       <h3 class="text-[#356902] text-center"><?php echo esc_html($downloadHeaderLeft) ?></h3>
       <div class="mb-8 w-full max-w-xs flex justify-center">
-        <img src="<?php echo esc_url($downloadImageLeft["url"]) ?>" alt="Leaflet Image" class="w-full h-auto max-h-[240px] object-contain mx-auto">
+        <img src="<?php echo esc_url($downloadImageLeft["url"]) ?>" alt="<?php echo esc_attr($downloadImageLeft["alt"]) ?>" class="w-full h-auto max-h-[240px] object-contain mx-auto">
       </div>
       <div class="flex justify-center w-full">
         <button class="flex items-center justify-center gap-2 bg-[#2B682C] text-[#ededed] py-3 px-6 rounded-md cursor-pointer">
-          <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="Download PDF" class="w-5 h-5">
+          <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="<?php echo esc_attr($downloadButtonLeft["alt"]) ?>" class="w-5 h-5">
           <span><?php echo esc_html($downloadButtonLeft) ?></span>
         </button>
       </div>
@@ -43,11 +43,11 @@ $loop = new WP_Query($args);
     <div class="flex flex-col items-center w-full max-w-sm">
       <h3 class="text-[#356902] text-center"><?php echo esc_html($downloadHeaderRight) ?></h3>
       <div class="mb-8 w-full max-w-xs flex justify-center">
-        <img src="<?php echo esc_url($downloadImageRight["url"]) ?>" alt="Magazine Image" class="w-full h-auto max-h-[240px] object-contain mx-auto">
+        <img src="<?php echo esc_url($downloadImageRight["url"]) ?>" alt="<?php echo esc_attr($downloadImageRight["alt"]) ?>" class="w-full h-auto max-h-[240px] object-contain mx-auto">
       </div>
       <div class="flex justify-center w-full">
         <button class="flex items-center justify-center gap-2 bg-[#2B682C] text-[#ededed] py-3 px-6 rounded-md cursor-pointer">
-          <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="Download PDF" class="w-5 h-5">
+          <img src="/wp-content/themes/tidslerne-theme/img/download-icon.png" alt="<?php echo esc_attr($downloadButtonRight["alt"]) ?>" class="w-5 h-5">
           <span><?php echo esc_html($downloadButtonRight) ?></span>
         </button>
       </div>
