@@ -113,7 +113,7 @@
       <img src="<?php echo esc_url($newsletterIcon["url"]); ?>" alt="<?php echo esc_attr($newsletterIcon["alt"]) ?>" class="max-h-full w-auto p-2">
     <?php endif; ?>
   </div>
-  <div class="flex flex-col items-center justify-center text-center max-w-[600px] px-8 lg:px-20">
+  <div class="flex items-center justify-center text-center  px-8 lg:px-20">
     <p><?php echo esc_html($newsletterText); ?></p>
     <div class="flex max-w-md space-x-6 mt-6">
       <div class="newsletter">
@@ -123,7 +123,7 @@
             <div class="tnp-field tnp-field-email"><label for="tnp-1">Email</label>
             <input class="!flex-grow !h-[45px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="" required></div>
             <div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> I accept the privacy policy</label></div>
-            <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer" style="text-align: centre"><input class="tnp-submit" type="submit" value="Subscribe" style=""></div>
+            <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer" style="text-align: centre"><input type="submit" value="Subscribe" style=""></div>
           </form>
         </div>
       </div>
