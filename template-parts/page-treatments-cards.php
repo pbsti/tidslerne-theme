@@ -20,7 +20,7 @@ $tabs = get_posts(array(
           'meta_query' => array(
             array(
               'key' => 'treatment_category',
-              'value' => $tab->ID,
+              'value' => $treatmentTab,
               'compare' => '='
             )
           )
