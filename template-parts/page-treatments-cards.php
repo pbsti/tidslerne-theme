@@ -1,22 +1,41 @@
 <?php 
-  $arguments = array(
-    'post_type' => 'treatment-frontpage',
-    'posts_per_page' => 4
-  );
-  $loop = new WP_Query($arguments);
+ $tabs = get_posts(array(
+    'post_type' => 'treatment-selector',
+    'posts_per_page' => -1,
+    'orderby' => 'menu_order',
+    'order' => 'ASC'
+));
+
 ?> 
 
-<?php if ($loop->have_posts()): ?>
 <section class="content-section">
   <!-- Content panels for each category -->
   <div class="bg-[#D9D9D9]/40 w-full">
     <div class="panels container mx-auto">
+      <?php 
+      $panel_counter = 1;
+      foreach($tabs as $tab): 
+        $tab_slug = sanitize_title($tab->post_title);
+        $args = array(
+          'post_type' => 'treatment-frontpage',
+          'posts_per_page' => 4,
+          'meta_query' => array(
+            array(
+              'key' => 'treatment_category', // ACF relationship field
+              'value' => $tab->ID,
+              'compare' => '='
+            )
+          )
+        );
+        $loop = new WP_Query($args);
+      ?>
+      
       <!-- COMPLEMENTARY -->
-      <div class="panel">
+      <div class="panel <?php echo $panel_counter === 1 ? '' : 'hidden'; ?>" key="<?php echo $panel_counter; ?>"> 
         <div class="flex flex-col items-center lg:min-h-[600px] sm:min-h-[400px] min-h-[300px] mx-auto px-4 py-6 md:py-8">
           <!-- Cards grid -->
           <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 mb-8 sm:px-10">
-            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+            <?php if ($loop->have_posts()): while ($loop->have_posts()) : $loop->the_post(); ?>
               <?php
                 $TFimage = get_field("tf_image");
                 $TFtagone = get_field("tf_tag_one");
@@ -65,19 +84,22 @@
                   </a>
                 </div>
               </div>
-            <?php endwhile; ?>
+            <?php endwhile;endif; ?>
           </div>
           <!-- CTA Button -->
           <div class="flex justify-center w-full md:mt-10 mb-12">
             <a href="#"
               class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
-              ALL COMPLEMENTARY TREATMENTS 
+              ALL <?php echo strtoupper($tab->post_title); ?> TREATMENTS 
             </a>
           </div>
         </div>
       </div>
+      <?php 
+        $panel_counter++;
+        wp_reset_postdata();
+      endforeach; 
+      ?>
     </div>
   </div>
 </section>
-<?php wp_reset_postdata(); ?>
-<?php endif; ?>
