@@ -15,7 +15,7 @@ $tabs = get_posts(array(
       $panel_counter = 1;
       foreach($tabs as $tab): 
         $args = array(
-          'post_type' => 'treatment-cards', // Changed to new post type
+          'post_type' => 'treatment-card', // Changed to new post type
           'posts_per_page' => -1, // Show all cards per tab
           'meta_query' => array(
             array(
