@@ -15,7 +15,7 @@ $loop = new WP_Query($args);
     <div class="tab-container flex flex-wrap justify-center gap-4 w-full">
       <?php while($loop->have_posts()): $loop->the_post(); ?>
         <?php $treatmentTab = get_field("treatment_tab"); ?>
-        <button class="bg-[#580259] text-[#ededed] rounded-xl px-6 py-3 uppercase text-center cursor-pointer" key="1">
+        <button class="bg-[#580259] text-[#ededed] rounded-xl px-6 py-3 uppercase text-center cursor-pointer">
           <?php echo esc_html($treatmentTab) ?>
         </button>
       <?php endwhile; ?>
