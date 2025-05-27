@@ -19,7 +19,7 @@ $loop = new WP_Query($args);
                 <?php if (!empty($galleryPicture["url"])): ?>
                 <div class="w-full aspect-[4/3] overflow-hidden">
                     <img
-                        src="<?php echo esc_url($galleryPicture["url"]) ?>" alt="Cancer Community Photo" class="w-full h-full object-cover"/>
+                        src="<?php echo esc_url($galleryPicture["url"]) ?>" alt="<?php echo esc_attr($galleryPicture["alt"]) ?>" class="w-full h-full object-cover"/>
                 </div>
                 <?php endif; ?>
             <?php endwhile; ?>
