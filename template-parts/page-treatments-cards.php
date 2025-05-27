@@ -26,13 +26,6 @@ $tabs = get_posts(array(
           )
         );
         $loop = new WP_Query($args);
-        // DEBUG: Check what's being queried
-        echo '<pre style="display:none;">';
-        echo 'Querying Treatment Cards for Tab ID: ' . $tab->ID . '<br>';
-        echo 'SQL Query: ' . $loop->request . '<br>';
-        echo 'Found Posts: ' . $loop->found_posts . '<br>';
-        print_r($loop->posts); // List all retrieved posts
-        echo '</pre>';
       ?>
       
       <div class="panel <?php echo $panel_counter === 1 ? '' : 'hidden'; ?>" key="<?php echo $panel_counter; ?>">
