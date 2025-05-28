@@ -15,7 +15,7 @@
   
 ?>
 
-<section class="flex flex-col items-center sm:mt-13 md:mt-14 lg:mt-15">
+<section class="flex flex-col items-center">
   <div class="flex flex-col-reverse md:flex-row w-full">
     <div class="w-full md:w-1/2 px-12 py-16 flex flex-col items-center justify-center">
       <h1 class="text-center mb-8 md:mb-15 lg:mb-17 py-3">

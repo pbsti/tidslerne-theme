@@ -24,7 +24,7 @@
 
 <!-- START PAGE CONTENT -->
 
-<section class="lg:min-h-[400px] sm:min-h-[300px] min-h-[200px] mt-16">
+<section class="lg:min-h-[400px] sm:min-h-[300px] min-h-[200px]">
   <div class="flex flex-col-reverse md:flex-row items-center md:justify-between lg:justify-center px-8 py-2 md:py-4">
     <!-- Left content -->
     <div class="w-full md:w-1/2 flex flex-col items-center justify-between gap-2 lg:gap-4 p-2 md:p-6">
