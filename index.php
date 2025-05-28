@@ -115,7 +115,7 @@
   </div>
   <div class="flex items-center justify-center text-center  px-8 lg:px-20">
     <p><?php echo esc_html($newsletterText); ?></p>
-    <div class="flex max-w-md space-x-6 mt-6">
+    <div class="flex flex-col max-w-md space-x-6 mt-6">
       <div class="newsletter">
         <div class="tnp tnp-subscription ">
           <form method="post" action="http://exam.paulinastiuj.dk/wp-admin/admin-ajax.php?action=tnp&na=s">
