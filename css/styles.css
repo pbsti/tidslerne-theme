@@ -138,9 +138,10 @@ footer p {
 }
 
 
-.tnp-subscription {
+.newsletter {
     display: flex;
     flex-direction: row;
+
 }
 
 .tnp-subscription input.tnp-submit {
