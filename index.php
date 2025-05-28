@@ -123,7 +123,7 @@
             <div class="tnp-field tnp-field-email"><label for="tnp-1">Email</label>
             <input class="!flex-grow !h-[45px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="" required></div>
             <div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> I accept the privacy policy</label></div>
-            <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer" style="text-align: centre"><input type="submit" value="Subscribe" class="bg-none text-[#ededed]"></div>
+            <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer" style="text-align: centre"><input class="tnp-submit" type="submit" value="Subscribe" class="bg-none text-[#ededed]"></div>
           </form>
         </div>
       </div>

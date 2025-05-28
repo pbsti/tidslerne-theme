@@ -131,6 +131,13 @@ footer p {
 }
 
 
+.tnp-submit {
+  background-color: #356902 !important;
+
+  font-size: clamp(0.8rem, 1vw, 1.3rem);
+}
+
+
 
 
 
