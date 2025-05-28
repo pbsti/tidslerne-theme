@@ -138,7 +138,7 @@ footer p {
 }
 
 .tnp-subscription input.tnp-submit, .tnp-profile input.tnp-submit, .tnp-unsubscribe button.tnp-submit, .tnp-reactivate button.tnp-submit {
-    background-color: #356902;
+    background-color: #356902 !important;
     color: #fff;
     width: auto;
     height: auto;
