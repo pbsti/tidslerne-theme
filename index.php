@@ -121,7 +121,7 @@
           <form method="post" action="http://exam.paulinastiuj.dk/wp-admin/admin-ajax.php?action=tnp&na=s">
             <input type="hidden" name="nlang" value="">
             <div class="tnp-field tnp-field-email"><label for="tnp-1">Email</label>
-            <input class="!flex-grow !h-[45px] !w-[100px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="" required></div>
+            <input class="!flex-grow !h-[45px] !w-[300px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="" required></div>
             <div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> I accept the privacy policy</label></div>
             <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer" style="text-align: centre"><input class="tnp-submit" type="submit" value="Subscribe" class="!cursor-pointer bg-none text-[#ededed]"></div>
           </form>
