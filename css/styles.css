@@ -138,12 +138,6 @@ footer p {
 }
 
 
-.newsletter {
-    display: flex;
-    flex-direction: row;
-
-}
-
 .tnp-subscription input.tnp-submit {
     background-color: #356902 !important;
     color: #fff !important;
