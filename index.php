@@ -113,7 +113,7 @@
       <img src="<?php echo esc_url($newsletterIcon["url"]); ?>" alt="<?php echo esc_attr($newsletterIcon["alt"]) ?>" class="max-h-full w-auto p-2">
     <?php endif; ?>
   </div>
-  <div class="flex items-center justify-center text-center  px-8 lg:px-20">
+  <div class="flex !flex-col items-center justify-center text-center  px-8 lg:px-20">
     <p><?php echo esc_html($newsletterText); ?></p>
     <div class="flex max-w-md space-x-6 mt-6">
       <div class="newsletter">
