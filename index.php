@@ -113,22 +113,37 @@
       <img src="<?php echo esc_url($newsletterIcon["url"]); ?>" alt="<?php echo esc_attr($newsletterIcon["alt"]) ?>" class="max-h-full w-auto p-2">
     <?php endif; ?>
   </div>
-  <div class="flex !flex-col items-center justify-center text-center  px-8 lg:px-20">
-    <p><?php echo esc_html($newsletterText); ?></p>
-    <div class="flex !flex-row max-w-md space-x-6">
-      <div class="newsletter">
-        <div class="tnp tnp-subscription ">
-          <form method="post" action="http://exam.paulinastiuj.dk/wp-admin/admin-ajax.php?action=tnp&na=s">
-            <input type="hidden" name="nlang" value="">
-            <div class="tnp-field tnp-field-email"><label for="tnp-1">Email</label>
-            <input class="!flex-grow !h-[45px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="" required></div>
-            <div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> I accept the privacy policy</label></div>
-            <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer" style="text-align: centre"><input class="tnp-submit" type="submit" value="Subscribe" class="!cursor-pointer bg-none text-[#ededed]"></div>
-          </form>
-        </div>
-      </div>  
-    </div>
+<div class="flex !flex-col items-center justify-center text-center px-8 lg:px-20">
+  <p><?php echo esc_html($newsletterText); ?></p>
+  <div class="flex !flex-col max-w-md space-y-4">
+    <div class="newsletter">
+      <div class="tnp tnp-subscription">
+        <form method="post" action="http://exam.paulinastiuj.dk/wp-admin/admin-ajax.php?action=tnp&na=s">
+          <input type="hidden" name="nlang" value="">
+          
+          <!-- Email input and Subscribe button in a row -->
+          <div class="flex !flex-row space-x-4 mb-4">
+            <div class="tnp-field tnp-field-email flex-grow">
+              <label for="tnp-1" class="sr-only">Email</label>
+              <input class="!w-full !h-[45px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="Enter your email" required>
+            </div>
+            <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer !h-[45px] !flex !items-center">
+              <input class="tnp-submit !cursor-pointer !bg-transparent !border-none !text-[#ededed] !p-0" type="submit" value="Subscribe">
+            </div>
+          </div>
+          
+          <!-- Checkbox remains separate -->
+          <div class="tnp-field tnp-privacy-field">
+            <label class="flex items-center justify-center space-x-2">
+              <input type="checkbox" name="ny" required class="tnp-privacy">
+              <span>I accept the privacy policy</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>  
   </div>
+</div>
 </section>
 
 <!-- Patient stories -->
