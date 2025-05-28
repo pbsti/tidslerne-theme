@@ -124,7 +124,7 @@
           <div class="flex !flex-row space-x-4 mb-4">
             <div class="tnp-field tnp-field-email flex-grow">
               <label for="tnp-1" class="sr-only">Email</label>
-              <input class="!w-[350px] !h-[45px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="Enter your email" required>
+              <input class="!w-[350px] !h-[45px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="you@example.com" required>
             </div>
             <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer !h-[45px] !flex !items-center">
               <input class="tnp-submit !cursor-pointer !bg-transparent !border-none !text-[#ededed] !p-0" type="submit" value="Subscribe">
