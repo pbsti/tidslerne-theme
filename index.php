@@ -24,7 +24,7 @@
 
 <!-- START PAGE CONTENT -->
 
-<section class="lg:min-h-[400px] sm:min-h-[300px] min-h-[200px]">
+<section class="lg:min-h-[400px] sm:min-h-[300px] min-h-[200px] mt-16">
   <div class="flex flex-col-reverse md:flex-row items-center md:justify-between lg:justify-center px-8 py-2 md:py-4">
     <!-- Left content -->
     <div class="w-full md:w-1/2 flex flex-col items-center justify-between gap-2 lg:gap-4 p-2 md:p-6">
@@ -115,7 +115,7 @@
   </div>
   <div class="flex items-center justify-center text-center  px-8 lg:px-20">
     <p><?php echo esc_html($newsletterText); ?></p>
-    <div class="flex flex-col max-w-md space-x-6 mt-6">
+    <div class="flex max-w-md space-x-6 mt-6">
       <div class="newsletter">
         <div class="tnp tnp-subscription ">
           <form method="post" action="http://exam.paulinastiuj.dk/wp-admin/admin-ajax.php?action=tnp&na=s">
