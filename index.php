@@ -121,18 +121,16 @@
         <form method="post" action="http://exam.paulinastiuj.dk/wp-admin/admin-ajax.php?action=tnp&na=s">
           <input type="hidden" name="nlang" value="">
           
-          <!-- Email input and Subscribe button in a row -->
           <div class="flex !flex-row space-x-4 mb-4">
             <div class="tnp-field tnp-field-email flex-grow">
               <label for="tnp-1" class="sr-only">Email</label>
-              <input class="!w-full !h-[45px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="Enter your email" required>
+              <input class="!w-[350px] !h-[45px] !px-4 !py-2 !rounded-md !bg-[#2EA836]/20 !cursor-pointer" type="email" name="ne" id="tnp-1" value="" placeholder="Enter your email" required>
             </div>
             <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer !h-[45px] !flex !items-center">
               <input class="tnp-submit !cursor-pointer !bg-transparent !border-none !text-[#ededed] !p-0" type="submit" value="Subscribe">
             </div>
           </div>
           
-          <!-- Checkbox remains separate -->
           <div class="tnp-field tnp-privacy-field">
             <label class="flex items-center justify-center space-x-2">
               <input type="checkbox" name="ny" required class="tnp-privacy">
