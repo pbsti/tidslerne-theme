@@ -137,6 +137,14 @@ footer p {
   font-size: clamp(0.8rem, 1vw, 1.3rem);
 }
 
+.tnp-subscription input.tnp-submit, .tnp-profile input.tnp-submit, .tnp-unsubscribe button.tnp-submit, .tnp-reactivate button.tnp-submit {
+    background-color: #356902;
+    color: #fff;
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: inline-block;
+}
 
 
 
