@@ -126,7 +126,7 @@
             <div class="!bg-[#2B682C] !text-[#ededed] !px-4 !py-2 !rounded-md !cursor-pointer" style="text-align: centre"><input class="tnp-submit" type="submit" value="Subscribe" class="!cursor-pointer bg-none text-[#ededed]"></div>
           </form>
         </div>
-      </div>
+      </div>  
     </div>
   </div>
 </section>
