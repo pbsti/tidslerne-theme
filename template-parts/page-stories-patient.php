@@ -38,9 +38,15 @@ $loop = new WP_Query($args);
           <div>
             <!-- Tags -->
             <div class="tags mb-2 flex flex-wrap gap-2 md:gap-4">
-              <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($patientTagOne) ?></span>
-              <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($patientTagTwo) ?></span>
-              <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($patientTagThree) ?></span>  
+              <?php if (!empty($patientTagOne)): ?>
+                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($patientTagOne) ?></span>
+              <?php endif; ?>
+              <?php if (!empty($patientTagTwo)): ?>
+                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($patientTagTwo) ?></span>
+              <?php endif; ?>
+              <?php if (!empty($patientTagThree)): ?>
+                <span class="rounded bg-[#580259] px-4 py-2 text-[#ededed] uppercase"><?php echo esc_html($patientTagThree) ?></span>
+              <?php endif; ?>
             </div>
             <!-- Text -->
             <p class="author mb-2"><?php echo esc_html($patientStoryAuthor) ?></p>

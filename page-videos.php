@@ -37,7 +37,7 @@
  <section class="min-h-[230px] flex flex-col justify-center items-center p-6 md:p-10 lg:p-15">
 
   <div class="w-full text-center mt-2 md:mt-4">
-    <h2>Share your experience and empower our community </h2>
+    <h2>Add your voice to our video library</h2>
   </div>
   <div class="flex items-center justify-center my-8 md:my-15 max-w-[75vw]">
     <p>
@@ -50,7 +50,7 @@
   <div class="flex justify-center w-full">
     <a href="#"
       class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center">
-      Support our mission
+      Contact us
     </a>
   </div>
 
