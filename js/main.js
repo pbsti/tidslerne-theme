@@ -6,13 +6,6 @@
     document.getElementById('mobileNavMenu').classList.add('hidden');
   };
 
-  // Hide "Frontpage" link on index.html only
-  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' ) {
-    var frontpageLink = document.getElementById('frontpage-link');
-    if(frontpageLink) frontpageLink.style.display = 'none';
-    var frontpageLinkMobile = document.getElementById('frontpage-link-mobile');
-    if(frontpageLinkMobile) frontpageLinkMobile.style.display = 'none';
-  }
 
 
 
