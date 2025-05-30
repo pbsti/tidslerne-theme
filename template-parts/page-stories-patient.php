@@ -57,7 +57,7 @@ $loop = new WP_Query($args);
         </div> 
         <!-- Button -->
         <div class="flex flex-col items-center justify-center w-auto p-4">
-          <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto px-6 py-3 uppercase text-center text-nowrap">
+          <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=680-7081&viewport=-5268%2C-7953%2C0.22&t=R1Mq9eJhLnHyykLG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto px-6 py-3 uppercase text-center text-nowrap">
             <?php echo esc_html($patientButtonText) ?>
           </a>
         </div>
@@ -66,8 +66,8 @@ $loop = new WP_Query($args);
   </div>
   <!-- CTA Button (outside the loop) -->
   <div class="flex justify-center mt-10 w-full md:mt-8">
-    <a href="#"
-      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+    <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=678-2666&viewport=-4882%2C-7953%2C0.22&t=Iu8Prg3PV3n86NjP-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329"
+      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="View all patient stories">
       ALL PATIENTS’ STORIES 
     </a>
   </div>

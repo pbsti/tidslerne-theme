@@ -52,8 +52,8 @@
 
     <!-- CTA Button -->
  <div class="flex justify-center w-full mb-10 md:mt-10">
-    <a href="#"
-      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+    <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=678-3276&viewport=-8299%2C-11217%2C0.3&t=HgtBAxV8uA8mPrIL-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329"
+      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="See all our magazines">
       SEE ALL OUR MAGAZINES 
     </a>
   </div>

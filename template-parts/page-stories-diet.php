@@ -83,7 +83,7 @@ $tabs = get_posts(array(
           
            <!-- CTA Button -->
           <div class="flex justify-center w-full md:mt-10 mb-12">
-            <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+            <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=680-7337&viewport=-9100%2C-11421%2C0.31&t=l0KTj6kjcXm1EFTD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="See all <?php echo esc_html(strtoupper($tab->post_title)); ?> articles">
               ALL <?php echo strtoupper($tab->post_title); ?> ARTICLES 
             </a>
           </div>

@@ -75,7 +75,7 @@
       </div>
     </div>
     <div class="flex justify-center w-full">
-      <a href="#" class="cta-btn bg-[#580259] text-[#ededed] text-xl rounded-3xl w-auto py-4 px-8 uppercase text-center">
+      <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=678-5115&viewport=-9340%2C-14716%2C0.32&t=vQKDiLvOVOOZu82F-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329" class="cta-btn bg-[#580259] text-[#ededed] text-xl rounded-3xl w-auto py-4 px-8 uppercase text-center" aria-label="Support our mission">
         Support our mission
       </a>
     </div>
@@ -91,7 +91,7 @@
       <h2>Find Connection and Support</h2>
     </div>
     <div class="flex justify-center w-full">
-      <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+      <a href="<?php echo get_permalink(get_page_by_path('membership')->ID); ?>" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="Sign up for membership">
         SIGN UP FOR MEMBERSHIP
       </a>
     </div>
@@ -156,7 +156,7 @@
       <h2 class="mb-3 md:mb-10 lg:mb-12 py-3">Shared Experiences</h2>
       <p class="md:max-w-[40vw] max-w-[75vw]"><?php echo esc_html($storiesText); ?></p>
       <div class="flex justify-center w-full mt-4 md:mt-10">
-        <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+        <a href="<?php echo get_permalink(get_page_by_path('stories')->ID); ?>" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="Read our patient stories">
           Our patient stories
         </a>
       </div>

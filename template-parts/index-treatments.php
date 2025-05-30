@@ -53,7 +53,7 @@
           </div> 
           <!-- Button -->
           <div class="flex flex-col items-center justify-center w-auto p-4">
-            <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto px-6 py-3 uppercase text-center text-nowrap">
+            <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=786-1205&viewport=-5825%2C-7503%2C0.24&t=15USawACebTR77B0-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto px-6 py-3 uppercase text-center text-nowrap">
               <?php echo esc_html($TFbutton) ?>
             </a>
           </div>
@@ -62,8 +62,8 @@
     </div>
     <!-- CTA Button -->
     <div class="flex justify-center w-full md:mt-8">
-      <a href="#"
-        class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+      <a href="<?php echo get_permalink(get_page_by_path('treatments')->ID); ?>" 
+        class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="Read more treatment options">
         READ MORE TREATMENT OPIONS
       </a>
     </div>

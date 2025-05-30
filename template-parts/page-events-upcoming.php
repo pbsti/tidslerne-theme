@@ -67,8 +67,8 @@ $loop = new WP_Query($args);
 
   <!-- CTA Button OUTSIDE LOOP -->
   <div class="flex justify-center w-full md:mt-8 md:mb-8">
-    <a href="#"
-      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+    <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=678-1349&viewport=-1953%2C-2016%2C0.1&t=JOSgSGHT907tSEsC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329"
+      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="See all upcoming events">
       See all upcoming events 
     </a>
   </div>

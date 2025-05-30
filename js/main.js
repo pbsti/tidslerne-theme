@@ -1,11 +1,28 @@
-  // Mobile menu toggle
-  document.getElementById('mobileMenuBtn').onclick = function() {
-    document.getElementById('mobileNavMenu').classList.remove('hidden');
-  };
-  document.getElementById('closeMobileMenu').onclick = function() {
-    document.getElementById('mobileNavMenu').classList.add('hidden');
-  };
+// Mobile menu toggle
+document.getElementById('mobileMenuBtn').onclick = function() {
+  document.getElementById('mobileNavMenu').classList.remove('hidden');
+};
+document.getElementById('closeMobileMenu').onclick = function() {
+  document.getElementById('mobileNavMenu').classList.add('hidden');
+  // Also close the More dropdown if open
+  document.getElementById('mobileMoreDropdown').classList.add('hidden');
+};
 
+// Mobile More dropdown toggle
+document.getElementById('mobileMoreBtn').onclick = function(e) {
+  e.preventDefault();
+  document.getElementById('mobileMoreDropdown').classList.toggle('hidden');
+};
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+  const moreBtn = document.getElementById('mobileMoreBtn');
+  const dropdown = document.getElementById('mobileMoreDropdown');
+  
+  if (!moreBtn.contains(event.target) && !dropdown.contains(event.target)) {
+    dropdown.classList.add('hidden');
+  }
+});
 
 
 

@@ -47,13 +47,13 @@
           <!-- Facebook -->
           <div class="flex flex-col md:flex-row items-center gap-4">
             <i class="fab fa-facebook-square text-[#2EA836] text-3xl"></i>
-            <a href="https://www.facebook.com/tidslernedk/">Facebook</a>
+            <a href="https://www.facebook.com/tidslernedk/" aria-label="Join Tidslerne Facebook group">Facebook</a>
           </div>
           
           <!-- Facebook Closed Group -->
           <div class="flex flex-col md:flex-row items-center gap-4">
             <i class="fab fa-facebook-square text-[#2EA836] text-3xl"></i>
-            <a href="https://www.facebook.com/groups/1480251482282861/?ref=group_header">Facebook closed group</a>
+            <a href="https://www.facebook.com/groups/1480251482282861/?ref=group_header" aria-label="Join Tidslerne's closed Facebook group">Facebook closed group</a>
           </div>
         </div>
       </div>

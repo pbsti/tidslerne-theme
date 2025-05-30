@@ -48,9 +48,9 @@
 
   <!-- CTA -->
   <div class="flex justify-center w-full">
-    <a href="#"
-      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center">
-      Contact us
+    <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=678-4653&viewport=-10099%2C-18001%2C0.39&t=1M4evEXVJhNAJEho-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329"
+      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center" aria-label="Contact us for more details">
+      Contact us for more details
     </a>
   </div>
 

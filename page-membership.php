@@ -76,7 +76,7 @@
     </div>
     <div class="flex justify-center w-full">
       <a href="#"
-        class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+        class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="Sign up for membership">
         SIGN UP FOR MEMBERSHIP
       </a>
     </div>

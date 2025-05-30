@@ -78,7 +78,7 @@ $tabs = get_posts(array(
                 
                 <!-- Button -->
                 <div class="flex flex-col items-center justify-center w-auto p-4">
-                  <a href="#" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto px-6 py-3 uppercase text-center text-nowrap">
+                  <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=786-1205&viewport=-8435%2C-10896%2C0.36&t=JLRH8caAcrpcUsPf-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329" class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto px-6 py-3 uppercase text-center text-nowrap">
                     <?php echo esc_html($TCbutton) ?>
                   </a>
                 </div>
@@ -89,8 +89,8 @@ $tabs = get_posts(array(
           
           <!-- CTA Button -->
           <div class="flex justify-center w-full md:mt-10 mb-12">
-            <a href="#"
-              class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+            <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=679-5993&viewport=-4126%2C-5612%2C0.19&t=4KPUTXAmymDv3s1y-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329"
+              class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="See all <?php echo esc_html(strtoupper($tab->post_title)); ?> treatments">
               ALL <?php echo strtoupper($tab->post_title); ?> TREATMENTS 
             </a>
           </div>

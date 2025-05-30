@@ -8,7 +8,7 @@ $loop = new WP_Query($args);
 
 <?php if ($loop->have_posts()): ?>
 <!-- Previous events section -->
-<section class="flex flex-col items-center lg:min-h-[600px] sm:min-h-[400px] min-h-[300px] mx-auto bg-[#D9D9D9]/40 px-8 py-6 md:py-8">
+<section class="flex flex-col items-center lg:min-h-[600px] sm:min-h-[400px] min-h-[300px] mx-auto px-8 py-6 md:py-8">
 
   <div class="w-full text-center py-2 my-8 md:my-10">
     <h2>Highlights from previous events</h2>
@@ -51,8 +51,8 @@ $loop = new WP_Query($args);
 
 
   <div class="flex justify-center w-full md:mt-8 md:mb-8">
-    <a href="#"
-      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap">
+    <a href="https://www.figma.com/proto/8EByKxI5wCzNOpGLRc40yb/Prototypes-for-Tidslerne?page-id=0%3A1&node-id=679-6747&viewport=-1953%2C-2016%2C0.1&t=QWuvIKEpa8sCn4qE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A329"
+      class="cta-btn bg-[#580259] text-[#ededed] rounded-3xl w-auto py-4 px-8 uppercase text-center text-nowrap" aria-label="See all previous events">
       SEE ALL PREVIOUS EVENTS 
     </a>
   </div>
