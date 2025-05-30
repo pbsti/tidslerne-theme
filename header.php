@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover holistic cancer support, alternative treatments, and volunteer opportunities at Tidslerne. A trusted Danish association guiding patients and families.">
+    <meta name="keywords" content="treatment abroad, cancer association, alternative cancer treatment, volunteer association, cancer, patient, support">
+    <meta name="title" content="Cancer Support & Alternative Treatments | Tidslerne Patient Association">
+    <meta name="author" content="Tidslerne">
     <title><?php bloginfo("name")?></title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -30,7 +34,9 @@
           <li><a href="<?php echo get_permalink(get_page_by_path("membership")->ID);?>"><h4>Membership</h4></a></li>
           <li><a href="<?php echo get_permalink(get_page_by_path("videos")->ID);?>"><h4>Videos</h4></a></li>
           <li><a href="#"><h4>More</h4></a></li>
-          <li><a id="frontpage-link" href="<?php echo get_permalink( get_page_by_path( 'frontpage' ) ); ?>"><h4>Frontpage</h4></a></li>
+          <?php if (!is_front_page()): ?>
+            <li><a id="frontpage-link" href="<?php echo get_permalink(get_page_by_path('frontpage')->ID); ?>"><h4>Frontpage</h4></a></li>
+          <?php endif; ?>
         </ul>
       </div>
       <!-- Login Right -->
@@ -57,7 +63,9 @@
           <li><a href="<?php echo get_permalink(get_page_by_path("membership")->ID);?>"><h4>Membership</h4></a></li>
           <li><a href="<?php echo get_permalink(get_page_by_path("videos")->ID);?>"><h4>Videos</h4></a></li>
           <li><a href="#"><h4>More</h4></a></li>
-          <li><a id="frontpage-link" href="<?php echo get_permalink( get_page_by_path( 'frontpage' ) ); ?>"><h4>Frontpage</h4></a></li>
+          <?php if (!is_front_page()): ?>
+            <li><a id="frontpage-link-mobile" href="<?php echo get_permalink(get_page_by_path('frontpage')->ID); ?>"><h4>Frontpage</h4></a></li>
+          <?php endif; ?>
       </ul>
       <div class="m-t-login flex mt-4 cursor-pointer gap-2 border border-[#ededed] rounded-md py-2 px-4 w-auto items-center">
         <i class="fas fa-sign-in-alt"></i>
