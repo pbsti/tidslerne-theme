@@ -18,7 +18,7 @@
         ?>
         <!-- Vision Column -->
         <div class="w-full md:w-1/3 px-3 md:px-6 flex flex-col items-center justify-between">
-          <p class="p-4 mb-5">
+          <p class="p-4 mb-5 text-center">
             <?php echo esc_html($bannerText) ?>         
           </p>
           <div class="flex justify-center items-end h-20 md:h-30 mb-2">
