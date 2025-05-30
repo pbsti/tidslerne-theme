@@ -59,7 +59,7 @@
   </div>
   <div class="relative w-full md:max-w-lg lg:max-w-3xl mx-auto aspect-video rounded-md overflow-hidden shadow-md mb-4">
     <iframe
-      src="<?php echo esc_url($videoLink ?: 'https://www.youtube.com/embed/rjm7kX3w57k?si=s0A4wy0xaHYy3XwR'); ?>"
+      src="<?php echo esc_url($videoLink ?: 'https://youtu.be/ezFnkuEd180'); ?>"
       title="Who are the Thistles - YouTube video"
       allowfullscreen
       class="absolute top-0 left-0 w-full h-full"
